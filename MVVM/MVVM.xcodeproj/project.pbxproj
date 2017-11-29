@@ -15,6 +15,9 @@
 		041CE62C1FCED3F200883695 /* QQNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE62B1FCED3F200883695 /* QQNewsViewController.m */; };
 		041CE6301FCEDD4600883695 /* QQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE62F1FCEDD4600883695 /* QQNetworkManager.m */; };
 		041CE6331FCEDD7D00883695 /* QQNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6321FCEDD7D00883695 /* QQNewsCell.m */; };
+		041CE6361FCEE87500883695 /* QQNewsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6351FCEE87500883695 /* QQNewsListViewModel.m */; };
+		041CE6391FCEE88200883695 /* QQNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6381FCEE88200883695 /* QQNewsViewModel.m */; };
+		041CE63C1FCEE8A800883695 /* QQNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE63B1FCEE8A800883695 /* QQNews.m */; };
 		17253A3B40D0DC02CD47E50F /* libPods-MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F392CD0F1E7593E4C314B7 /* libPods-MVVM.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,12 @@
 		041CE62F1FCEDD4600883695 /* QQNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNetworkManager.m; sourceTree = "<group>"; };
 		041CE6311FCEDD7D00883695 /* QQNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNewsCell.h; sourceTree = "<group>"; };
 		041CE6321FCEDD7D00883695 /* QQNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNewsCell.m; sourceTree = "<group>"; };
+		041CE6341FCEE87500883695 /* QQNewsListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNewsListViewModel.h; sourceTree = "<group>"; };
+		041CE6351FCEE87500883695 /* QQNewsListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNewsListViewModel.m; sourceTree = "<group>"; };
+		041CE6371FCEE88200883695 /* QQNewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNewsViewModel.h; sourceTree = "<group>"; };
+		041CE6381FCEE88200883695 /* QQNewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNewsViewModel.m; sourceTree = "<group>"; };
+		041CE63A1FCEE8A800883695 /* QQNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNews.h; sourceTree = "<group>"; };
+		041CE63B1FCEE8A800883695 /* QQNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNews.m; sourceTree = "<group>"; };
 		10F392CD0F1E7593E4C314B7 /* libPods-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D06DEA00CEF2C3E23857F8E /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		9DB694976E34BCFC48C3F9A2 /* Pods-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +97,10 @@
 		041CE61F1FCED34B00883695 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				041CE6341FCEE87500883695 /* QQNewsListViewModel.h */,
+				041CE6351FCEE87500883695 /* QQNewsListViewModel.m */,
+				041CE6371FCEE88200883695 /* QQNewsViewModel.h */,
+				041CE6381FCEE88200883695 /* QQNewsViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -95,6 +108,8 @@
 		041CE6201FCED34B00883695 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				041CE63A1FCEE8A800883695 /* QQNews.h */,
+				041CE63B1FCEE8A800883695 /* QQNews.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,7 +304,10 @@
 			files = (
 				041CE6301FCEDD4600883695 /* QQNetworkManager.m in Sources */,
 				041CE6281FCED34C00883695 /* main.m in Sources */,
+				041CE63C1FCEE8A800883695 /* QQNews.m in Sources */,
 				041CE6331FCEDD7D00883695 /* QQNewsCell.m in Sources */,
+				041CE6391FCEE88200883695 /* QQNewsViewModel.m in Sources */,
+				041CE6361FCEE87500883695 /* QQNewsListViewModel.m in Sources */,
 				041CE62C1FCED3F200883695 /* QQNewsViewController.m in Sources */,
 				041CE6291FCED34C00883695 /* AppDelegate.m in Sources */,
 			);
