@@ -11,10 +11,11 @@
 #import "QQNewsListViewModel.h"
 
 @interface QQNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
-
+/// TableView
 @property (nonatomic, strong) UITableView *tableView;
+/// 数据
 @property (nonatomic, strong) NSArray *dataArr;
-/** 视图模型数组 */
+/// 视图模型数组
 @property (nonatomic, strong) QQNewsListViewModel *newsListViewModel;
 
 @end
@@ -31,9 +32,14 @@
 #pragma mark - Load Data
 - (void)loadData {
     
-    [self.newsListViewModel loadNewsData];
-    NSLog(@"-=-=%ld", self.newsListViewModel.newsViewModelList.count);
-    [self.tableView reloadData];
+    [self.newsListViewModel loadNewsCompleted:^(BOOL isSuccessed) {
+        
+        if (!isSuccessed) {
+            NSLog(@"没有加载到数据");
+            return;
+        }
+        [self.tableView reloadData];
+    }];
 }
 
 #pragma mark - SetupUI
@@ -44,14 +50,13 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    return 10;
-    return self.newsListViewModel.newsViewModelList.count;
+    return self.newsListViewModel.newsList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     QQNewsCell *cell = [QQNewsCell newsCellWithTableView:tableView];
-//    cell.model = self.dataArr[indexPath.row];
+    cell.viewModel = self.newsListViewModel.newsList[indexPath.row];
     return cell;
 }
 
@@ -63,7 +68,7 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         _tableView.dataSource = self;
         _tableView.delegate = self;
-        _tableView.rowHeight = 80;
+        _tableView.rowHeight = 100;
         [self.view addSubview:_tableView];
     }
     return _tableView;

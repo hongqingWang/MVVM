@@ -11,5 +11,30 @@
 
 @implementation QQNewsViewModel
 
++ (instancetype)viewModelWithNews:(QQNews *)news {
+    
+    QQNewsViewModel *viewModel = [[self alloc] init];
+    
+    viewModel.news = news;
+    
+    return viewModel;
+}
+
+- (NSURL *)news_imgsrc {
+    return [NSURL URLWithString:self.news.imgsrc];
+}
+
+- (NSString *)news_replyCount {
+    
+    // 测试跟帖数超过1万显示是否正确
+    self.news.replyCount = 23456;
+    
+    if (self.news.replyCount >= 10000) {
+        
+        NSString *string = [NSString stringWithFormat:@"%ld万 跟帖", self.news.replyCount / 10000];
+        return string;
+    }
+    return [NSString stringWithFormat:@"%ld 跟帖", self.news.replyCount];
+}
 
 @end

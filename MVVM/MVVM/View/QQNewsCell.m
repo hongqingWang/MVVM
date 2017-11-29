@@ -8,19 +8,33 @@
 
 #import "QQNewsCell.h"
 #import <Masonry.h>
+#import "QQNewsViewModel.h"
+#import "QQNews.h"
+#import <UIImageView+WebCache.h>
 
 @interface QQNewsCell ()
 
-/** 主标题 */
-@property (nonatomic, strong) UILabel *newsTitleLabel;
-/** 副标题 */
-@property (nonatomic, strong) UILabel *newsSubTitleLabel;
-/** 图片 */
+/// 图片
 @property (nonatomic, strong) UIImageView *newsImageView;
+/// 标题
+@property (nonatomic, strong) UILabel *newsTitleLabel;
+/// 副标题
+@property (nonatomic, strong) UILabel *newsSubTitleLabel;
+/// 跟帖数
+@property (nonatomic, strong) UILabel *replyCountLabel;
 
 @end
 
 @implementation QQNewsCell
+
+- (void)setViewModel:(QQNewsViewModel *)viewModel {
+    _viewModel = viewModel;
+    
+    [self.newsImageView sd_setImageWithURL:viewModel.news_imgsrc];
+    self.newsTitleLabel.text = viewModel.news.title;
+    self.newsSubTitleLabel.text = viewModel.news.digest;
+    self.replyCountLabel.text = viewModel.news_replyCount;
+}
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     
@@ -48,16 +62,17 @@
     [self addSubview:self.newsImageView];
     [self addSubview:self.newsTitleLabel];
     [self addSubview:self.newsSubTitleLabel];
+    [self addSubview:self.replyCountLabel];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
+
     [self.newsImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(8);
         make.left.equalTo(self).offset(16);
         make.bottom.equalTo(self).offset(-8);
-        make.width.mas_equalTo(100);
+        make.width.mas_equalTo(112);
     }];
     [self.newsTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(_newsImageView);
@@ -68,6 +83,10 @@
         make.top.equalTo(_newsTitleLabel.mas_bottom).offset(8);
         make.left.equalTo(_newsTitleLabel);
         make.right.equalTo(_newsTitleLabel);
+    }];
+    [self.replyCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self).offset(-8);
+        make.right.equalTo(self).offset(-16);
     }];
 }
 
@@ -94,9 +113,7 @@
 }
 
 - (UILabel *)newsSubTitleLabel {
-    
     if (_newsSubTitleLabel == nil) {
-        
         _newsSubTitleLabel = [[UILabel alloc] init];
         _newsSubTitleLabel.text = @"副标题";
         _newsSubTitleLabel.textColor = [UIColor lightGrayColor];
@@ -104,6 +121,17 @@
         _newsSubTitleLabel.numberOfLines = 2;
     }
     return _newsSubTitleLabel;
+}
+
+- (UILabel *)replyCountLabel {
+    if (_replyCountLabel == nil) {
+        _replyCountLabel = [[UILabel alloc] init];
+        _replyCountLabel.text = @"跟帖数";
+        _replyCountLabel.textColor = [UIColor darkGrayColor];
+        _replyCountLabel.font = [UIFont systemFontOfSize:12];
+        _replyCountLabel.textAlignment = NSTextAlignmentRight;
+    }
+    return _replyCountLabel;
 }
 
 @end

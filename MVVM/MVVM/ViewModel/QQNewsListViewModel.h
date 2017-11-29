@@ -11,9 +11,14 @@
 
 @interface QQNewsListViewModel : NSObject
 
-/** 单条新闻`视图模型`数组 */
-@property (nonatomic, strong) NSArray<QQNewsViewModel *> *newsViewModelList;
+/// 新闻`视图模型`数组
+@property (nonatomic, strong) NSMutableArray *newsList;
 
-- (void)loadNewsData;
+/**
+ 加载数据
+
+ @param completed 完成回调
+ */
+- (void)loadNewsCompleted:(void (^)(BOOL isSuccessed))completed;
 
 @end

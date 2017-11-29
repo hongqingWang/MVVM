@@ -11,15 +11,16 @@
 
 @interface QQNewsViewModel : NSObject
 
-/** 新闻数据模型 */
+/// 新闻数据模型
 @property (nonatomic, strong) QQNews *news;
-
-/** 处理过的新闻标题 */
-@property (nonatomic, copy) NSString *newsTitle;
+/// 新闻图片URL
+@property (nonatomic, strong) NSURL *news_imgsrc;
+/// 跟帖数(在此处理)
+@property (nonatomic, copy) NSString *news_replyCount;
 
 /**
- * 初始化方法
+ * 新闻模型实例化视图模型
  */
-//+ (instancetype)initWithNews:(QQNews *)news;
++ (instancetype)viewModelWithNews:(QQNews *)news;
 
 @end
