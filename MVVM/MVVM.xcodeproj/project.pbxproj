@@ -7,41 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041CE6111FCED23200883695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041CE60F1FCED23200883695 /* Main.storyboard */; };
 		041CE6131FCED23200883695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041CE6121FCED23200883695 /* Assets.xcassets */; };
 		041CE6161FCED23200883695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041CE6141FCED23200883695 /* LaunchScreen.storyboard */; };
-		041CE6281FCED34C00883695 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6231FCED34B00883695 /* main.m */; };
-		041CE6291FCED34C00883695 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6241FCED34B00883695 /* AppDelegate.m */; };
-		041CE62C1FCED3F200883695 /* QQNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE62B1FCED3F200883695 /* QQNewsViewController.m */; };
-		041CE6301FCEDD4600883695 /* QQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE62F1FCEDD4600883695 /* QQNetworkManager.m */; };
-		041CE6331FCEDD7D00883695 /* QQNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6321FCEDD7D00883695 /* QQNewsCell.m */; };
-		041CE6361FCEE87500883695 /* QQNewsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6351FCEE87500883695 /* QQNewsListViewModel.m */; };
-		041CE6391FCEE88200883695 /* QQNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6381FCEE88200883695 /* QQNewsViewModel.m */; };
-		041CE63C1FCEE8A800883695 /* QQNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE63B1FCEE8A800883695 /* QQNews.m */; };
+		041CE6CF1FCFD83D00883695 /* QQNewsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6B71FCFD83D00883695 /* QQNewsListViewModel.m */; };
+		041CE6D01FCFD83D00883695 /* QQNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6B81FCFD83D00883695 /* QQNewsViewModel.m */; };
+		041CE6D11FCFD83D00883695 /* qq_news_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041CE6BB1FCFD83D00883695 /* qq_news_placeholder@2x.png */; };
+		041CE6D21FCFD83D00883695 /* QQNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6BE1FCFD83D00883695 /* QQNewsViewController.m */; };
+		041CE6D31FCFD83D00883695 /* QQNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6C11FCFD83D00883695 /* QQNews.m */; };
+		041CE6D41FCFD83D00883695 /* QQNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6C41FCFD83D00883695 /* QQNewsCell.m */; };
+		041CE6D51FCFD83D00883695 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6C71FCFD83D00883695 /* main.m */; };
+		041CE6D61FCFD83D00883695 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6C81FCFD83D00883695 /* AppDelegate.m */; };
+		041CE6D71FCFD83D00883695 /* QQNetworkManager+QQNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6CD1FCFD83D00883695 /* QQNetworkManager+QQNews.m */; };
+		041CE6D81FCFD83D00883695 /* QQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6CE1FCFD83D00883695 /* QQNetworkManager.m */; };
 		17253A3B40D0DC02CD47E50F /* libPods-MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F392CD0F1E7593E4C314B7 /* libPods-MVVM.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		041CE6061FCED23200883695 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		041CE6101FCED23200883695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		041CE6121FCED23200883695 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041CE6151FCED23200883695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041CE6171FCED23200883695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		041CE6221FCED34B00883695 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		041CE6231FCED34B00883695 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		041CE6241FCED34B00883695 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		041CE62A1FCED3F200883695 /* QQNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNewsViewController.h; sourceTree = "<group>"; };
-		041CE62B1FCED3F200883695 /* QQNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNewsViewController.m; sourceTree = "<group>"; };
-		041CE62E1FCEDD4600883695 /* QQNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNetworkManager.h; sourceTree = "<group>"; };
-		041CE62F1FCEDD4600883695 /* QQNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNetworkManager.m; sourceTree = "<group>"; };
-		041CE6311FCEDD7D00883695 /* QQNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNewsCell.h; sourceTree = "<group>"; };
-		041CE6321FCEDD7D00883695 /* QQNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNewsCell.m; sourceTree = "<group>"; };
-		041CE6341FCEE87500883695 /* QQNewsListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNewsListViewModel.h; sourceTree = "<group>"; };
-		041CE6351FCEE87500883695 /* QQNewsListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNewsListViewModel.m; sourceTree = "<group>"; };
-		041CE6371FCEE88200883695 /* QQNewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNewsViewModel.h; sourceTree = "<group>"; };
-		041CE6381FCEE88200883695 /* QQNewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNewsViewModel.m; sourceTree = "<group>"; };
-		041CE63A1FCEE8A800883695 /* QQNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QQNews.h; sourceTree = "<group>"; };
-		041CE63B1FCEE8A800883695 /* QQNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QQNews.m; sourceTree = "<group>"; };
+		041CE6B61FCFD83D00883695 /* QQNewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNewsViewModel.h; sourceTree = "<group>"; };
+		041CE6B71FCFD83D00883695 /* QQNewsListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNewsListViewModel.m; sourceTree = "<group>"; };
+		041CE6B81FCFD83D00883695 /* QQNewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNewsViewModel.m; sourceTree = "<group>"; };
+		041CE6B91FCFD83D00883695 /* QQNewsListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNewsListViewModel.h; sourceTree = "<group>"; };
+		041CE6BB1FCFD83D00883695 /* qq_news_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq_news_placeholder@2x.png"; sourceTree = "<group>"; };
+		041CE6BD1FCFD83D00883695 /* QQNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNewsViewController.h; sourceTree = "<group>"; };
+		041CE6BE1FCFD83D00883695 /* QQNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNewsViewController.m; sourceTree = "<group>"; };
+		041CE6C01FCFD83D00883695 /* QQNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNews.h; sourceTree = "<group>"; };
+		041CE6C11FCFD83D00883695 /* QQNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNews.m; sourceTree = "<group>"; };
+		041CE6C31FCFD83D00883695 /* QQNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNewsCell.h; sourceTree = "<group>"; };
+		041CE6C41FCFD83D00883695 /* QQNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNewsCell.m; sourceTree = "<group>"; };
+		041CE6C61FCFD83D00883695 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		041CE6C71FCFD83D00883695 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041CE6C81FCFD83D00883695 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		041CE6CB1FCFD83D00883695 /* QQNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNetworkManager.h; sourceTree = "<group>"; };
+		041CE6CC1FCFD83D00883695 /* QQNetworkManager+QQNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QQNetworkManager+QQNews.h"; sourceTree = "<group>"; };
+		041CE6CD1FCFD83D00883695 /* QQNetworkManager+QQNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QQNetworkManager+QQNews.m"; sourceTree = "<group>"; };
+		041CE6CE1FCFD83D00883695 /* QQNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNetworkManager.m; sourceTree = "<group>"; };
 		10F392CD0F1E7593E4C314B7 /* libPods-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D06DEA00CEF2C3E23857F8E /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		9DB694976E34BCFC48C3F9A2 /* Pods-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,13 +83,7 @@
 		041CE6081FCED23200883695 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				041CE6251FCED34B00883695 /* Controller */,
-				041CE6201FCED34B00883695 /* Model */,
-				041CE6271FCED34C00883695 /* View */,
-				041CE61F1FCED34B00883695 /* ViewModel */,
-				041CE6261FCED34B00883695 /* Tool */,
-				041CE6211FCED34B00883695 /* Other */,
-				041CE60F1FCED23200883695 /* Main.storyboard */,
+				041CE6B21FCFD83D00883695 /* Classes */,
 				041CE6121FCED23200883695 /* Assets.xcassets */,
 				041CE6141FCED23200883695 /* LaunchScreen.storyboard */,
 				041CE6171FCED23200883695 /* Info.plist */,
@@ -94,67 +91,107 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
-		041CE61F1FCED34B00883695 /* ViewModel */ = {
+		041CE6B21FCFD83D00883695 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				041CE6341FCEE87500883695 /* QQNewsListViewModel.h */,
-				041CE6351FCEE87500883695 /* QQNewsListViewModel.m */,
-				041CE6371FCEE88200883695 /* QQNewsViewModel.h */,
-				041CE6381FCEE88200883695 /* QQNewsViewModel.m */,
+				041CE6C51FCFD83D00883695 /* Main */,
+				041CE6B41FCFD83D00883695 /* News */,
+				041CE6C91FCFD83D00883695 /* Tool */,
+				041CE6B31FCFD83D00883695 /* Other */,
 			);
-			path = ViewModel;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		041CE6201FCED34B00883695 /* Model */ = {
+		041CE6B31FCFD83D00883695 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				041CE63A1FCEE8A800883695 /* QQNews.h */,
-				041CE63B1FCEE8A800883695 /* QQNews.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		041CE6211FCED34B00883695 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				041CE6221FCED34B00883695 /* AppDelegate.h */,
-				041CE6241FCED34B00883695 /* AppDelegate.m */,
-				041CE6231FCED34B00883695 /* main.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
 		};
-		041CE6251FCED34B00883695 /* Controller */ = {
+		041CE6B41FCFD83D00883695 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				041CE62A1FCED3F200883695 /* QQNewsViewController.h */,
-				041CE62B1FCED3F200883695 /* QQNewsViewController.m */,
+				041CE6BC1FCFD83D00883695 /* Controller */,
+				041CE6B51FCFD83D00883695 /* ViewModel */,
+				041CE6C21FCFD83D00883695 /* View */,
+				041CE6BF1FCFD83D00883695 /* Model */,
+				041CE6BA1FCFD83D00883695 /* NewsAssets */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		041CE6B51FCFD83D00883695 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				041CE6B91FCFD83D00883695 /* QQNewsListViewModel.h */,
+				041CE6B71FCFD83D00883695 /* QQNewsListViewModel.m */,
+				041CE6B61FCFD83D00883695 /* QQNewsViewModel.h */,
+				041CE6B81FCFD83D00883695 /* QQNewsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		041CE6BA1FCFD83D00883695 /* NewsAssets */ = {
+			isa = PBXGroup;
+			children = (
+				041CE6BB1FCFD83D00883695 /* qq_news_placeholder@2x.png */,
+			);
+			path = NewsAssets;
+			sourceTree = "<group>";
+		};
+		041CE6BC1FCFD83D00883695 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041CE6BD1FCFD83D00883695 /* QQNewsViewController.h */,
+				041CE6BE1FCFD83D00883695 /* QQNewsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		041CE6261FCED34B00883695 /* Tool */ = {
+		041CE6BF1FCFD83D00883695 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				041CE62D1FCEDD4600883695 /* NetWork */,
+				041CE6C01FCFD83D00883695 /* QQNews.h */,
+				041CE6C11FCFD83D00883695 /* QQNews.m */,
 			);
-			path = Tool;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		041CE6271FCED34C00883695 /* View */ = {
+		041CE6C21FCFD83D00883695 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				041CE6311FCEDD7D00883695 /* QQNewsCell.h */,
-				041CE6321FCEDD7D00883695 /* QQNewsCell.m */,
+				041CE6C31FCFD83D00883695 /* QQNewsCell.h */,
+				041CE6C41FCFD83D00883695 /* QQNewsCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		041CE62D1FCEDD4600883695 /* NetWork */ = {
+		041CE6C51FCFD83D00883695 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				041CE62E1FCEDD4600883695 /* QQNetworkManager.h */,
-				041CE62F1FCEDD4600883695 /* QQNetworkManager.m */,
+				041CE6C61FCFD83D00883695 /* AppDelegate.h */,
+				041CE6C81FCFD83D00883695 /* AppDelegate.m */,
+				041CE6C71FCFD83D00883695 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		041CE6C91FCFD83D00883695 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				041CE6CA1FCFD83D00883695 /* NetWork */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		041CE6CA1FCFD83D00883695 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				041CE6CB1FCFD83D00883695 /* QQNetworkManager.h */,
+				041CE6CE1FCFD83D00883695 /* QQNetworkManager.m */,
+				041CE6CC1FCFD83D00883695 /* QQNetworkManager+QQNews.h */,
+				041CE6CD1FCFD83D00883695 /* QQNetworkManager+QQNews.m */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -240,7 +277,7 @@
 			files = (
 				041CE6161FCED23200883695 /* LaunchScreen.storyboard in Resources */,
 				041CE6131FCED23200883695 /* Assets.xcassets in Resources */,
-				041CE6111FCED23200883695 /* Main.storyboard in Resources */,
+				041CE6D11FCFD83D00883695 /* qq_news_placeholder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,28 +339,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041CE6301FCEDD4600883695 /* QQNetworkManager.m in Sources */,
-				041CE6281FCED34C00883695 /* main.m in Sources */,
-				041CE63C1FCEE8A800883695 /* QQNews.m in Sources */,
-				041CE6331FCEDD7D00883695 /* QQNewsCell.m in Sources */,
-				041CE6391FCEE88200883695 /* QQNewsViewModel.m in Sources */,
-				041CE6361FCEE87500883695 /* QQNewsListViewModel.m in Sources */,
-				041CE62C1FCED3F200883695 /* QQNewsViewController.m in Sources */,
-				041CE6291FCED34C00883695 /* AppDelegate.m in Sources */,
+				041CE6CF1FCFD83D00883695 /* QQNewsListViewModel.m in Sources */,
+				041CE6D21FCFD83D00883695 /* QQNewsViewController.m in Sources */,
+				041CE6D41FCFD83D00883695 /* QQNewsCell.m in Sources */,
+				041CE6D31FCFD83D00883695 /* QQNews.m in Sources */,
+				041CE6D51FCFD83D00883695 /* main.m in Sources */,
+				041CE6D71FCFD83D00883695 /* QQNetworkManager+QQNews.m in Sources */,
+				041CE6D81FCFD83D00883695 /* QQNetworkManager.m in Sources */,
+				041CE6D01FCFD83D00883695 /* QQNewsViewModel.m in Sources */,
+				041CE6D61FCFD83D00883695 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		041CE60F1FCED23200883695 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				041CE6101FCED23200883695 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		041CE6141FCED23200883695 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

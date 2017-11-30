@@ -2,15 +2,15 @@
 //  QQNewsCell.m
 //  MVVM
 //
-//  Created by Mac on 29/11/2017.
+//  Created by Mac on 30/11/2017.
 //  Copyright © 2017 Mac. All rights reserved.
 //
 
 #import "QQNewsCell.h"
 #import <Masonry.h>
+#import <UIImageView+WebCache.h>
 #import "QQNewsViewModel.h"
 #import "QQNews.h"
-#import <UIImageView+WebCache.h>
 
 @interface QQNewsCell ()
 
@@ -30,10 +30,10 @@
 - (void)setViewModel:(QQNewsViewModel *)viewModel {
     _viewModel = viewModel;
     
-    [self.newsImageView sd_setImageWithURL:viewModel.news_imgsrc];
+    [self.newsImageView sd_setImageWithURL:viewModel.imgsrc_url];
     self.newsTitleLabel.text = viewModel.news.title;
     self.newsSubTitleLabel.text = viewModel.news.digest;
-    self.replyCountLabel.text = viewModel.news_replyCount;
+    self.replyCountLabel.text = viewModel.replyCount_string;
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
@@ -57,6 +57,7 @@
     return cell;
 }
 
+#pragma mark - SetupUI
 - (void)setupUI {
     
     [self addSubview:self.newsImageView];
@@ -67,7 +68,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-
+    
     [self.newsImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self).offset(8);
         make.left.equalTo(self).offset(16);
@@ -92,9 +93,7 @@
 
 #pragma mark - Getters and Setters
 - (UIImageView *)newsImageView {
-    
     if (_newsImageView == nil) {
-        
         _newsImageView = [[UIImageView alloc] init];
         _newsImageView.image = [UIImage imageNamed:@"qq_news_placeholder"];
     }
@@ -102,9 +101,7 @@
 }
 
 - (UILabel *)newsTitleLabel {
-    
     if (_newsTitleLabel == nil) {
-        
         _newsTitleLabel = [[UILabel alloc] init];
         _newsTitleLabel.text = @"标题";
         _newsTitleLabel.textColor = [UIColor darkGrayColor];

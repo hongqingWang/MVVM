@@ -2,7 +2,7 @@
 //  QQNewsViewModel.m
 //  MVVM
 //
-//  Created by Mac on 29/11/2017.
+//  Created by Mac on 30/11/2017.
 //  Copyright © 2017 Mac. All rights reserved.
 //
 
@@ -20,14 +20,15 @@
     return viewModel;
 }
 
-- (NSURL *)news_imgsrc {
+- (NSURL *)imgsrc_url {
+    
     return [NSURL URLWithString:self.news.imgsrc];
 }
 
-- (NSString *)news_replyCount {
+- (NSString *)replyCount_string {
     
-    // 测试跟帖数超过1万显示是否正确
-    self.news.replyCount = 23456;
+    // 测试跟帖数超过1万
+//    self.news.replyCount = 23456;
     
     if (self.news.replyCount >= 10000) {
         

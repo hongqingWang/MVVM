@@ -2,7 +2,7 @@
 //  QQNewsViewController.m
 //  MVVM
 //
-//  Created by Mac on 29/11/2017.
+//  Created by Mac on 30/11/2017.
 //  Copyright © 2017 Mac. All rights reserved.
 //
 
@@ -11,11 +11,10 @@
 #import "QQNewsListViewModel.h"
 
 @interface QQNewsViewController ()<UITableViewDataSource, UITableViewDelegate>
+
 /// TableView
 @property (nonatomic, strong) UITableView *tableView;
-/// 数据
-@property (nonatomic, strong) NSArray *dataArr;
-/// 视图模型数组
+/// 新闻视图模型数组
 @property (nonatomic, strong) QQNewsListViewModel *newsListViewModel;
 
 @end
@@ -32,12 +31,7 @@
 #pragma mark - Load Data
 - (void)loadData {
     
-    [self.newsListViewModel loadNewsCompleted:^(BOOL isSuccessed) {
-        
-        if (!isSuccessed) {
-            NSLog(@"没有加载到数据");
-            return;
-        }
+    [self.newsListViewModel loadNewsDataCompletion:^(BOOL isSuccessed) {
         [self.tableView reloadData];
     }];
 }
@@ -45,6 +39,7 @@
 #pragma mark - SetupUI
 - (void)setupUI {
     
+    self.navigationItem.title = @"新闻列表";
     [self tableView];
 }
 
@@ -62,9 +57,7 @@
 
 #pragma mark - Getters and Setters
 - (UITableView *)tableView {
-    
     if (_tableView == nil) {
-        
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
         _tableView.dataSource = self;
         _tableView.delegate = self;
@@ -75,9 +68,7 @@
 }
 
 - (QQNewsListViewModel *)newsListViewModel {
-    
     if (_newsListViewModel == nil) {
-        
         _newsListViewModel = [[QQNewsListViewModel alloc] init];
     }
     return _newsListViewModel;

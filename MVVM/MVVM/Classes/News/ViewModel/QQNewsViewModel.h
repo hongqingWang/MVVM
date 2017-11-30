@@ -2,7 +2,7 @@
 //  QQNewsViewModel.h
 //  MVVM
 //
-//  Created by Mac on 29/11/2017.
+//  Created by Mac on 30/11/2017.
 //  Copyright © 2017 Mac. All rights reserved.
 //
 
@@ -14,13 +14,10 @@
 /// 新闻数据模型
 @property (nonatomic, strong) QQNews *news;
 /// 新闻图片URL
-@property (nonatomic, strong) NSURL *news_imgsrc;
+@property (nonatomic, strong) NSURL *imgsrc_url;
 /// 跟帖数(在此处理)
-@property (nonatomic, copy) NSString *news_replyCount;
+@property (nonatomic, copy) NSString *replyCount_string;
 
-/**
- * 新闻模型实例化视图模型
- */
 + (instancetype)viewModelWithNews:(QQNews *)news;
 
 @end

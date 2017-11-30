@@ -2,7 +2,7 @@
 //  QQNewsListViewModel.h
 //  MVVM
 //
-//  Created by Mac on 29/11/2017.
+//  Created by Mac on 30/11/2017.
 //  Copyright © 2017 Mac. All rights reserved.
 //
 
@@ -15,10 +15,10 @@
 @property (nonatomic, strong) NSMutableArray *newsList;
 
 /**
- 加载数据
+ 加载新闻数据
 
- @param completed 完成回调
+ @param completion completion
  */
-- (void)loadNewsCompleted:(void (^)(BOOL isSuccessed))completed;
+- (void)loadNewsDataCompletion:(void (^)(BOOL isSuccessed))completion;
 
 @end
