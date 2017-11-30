@@ -32,6 +32,10 @@
 - (void)loadData {
     
     [self.newsListViewModel loadNewsDataCompletion:^(BOOL isSuccessed) {
+        
+        if (!isSuccessed) {
+            NSLog(@"%s 没有请求到数据", __FUNCTION__);
+        }
         [self.tableView reloadData];
     }];
 }
