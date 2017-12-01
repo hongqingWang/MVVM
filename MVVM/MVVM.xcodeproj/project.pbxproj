@@ -11,7 +11,6 @@
 		041CE6161FCED23200883695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041CE6141FCED23200883695 /* LaunchScreen.storyboard */; };
 		041CE6CF1FCFD83D00883695 /* QQNewsListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6B71FCFD83D00883695 /* QQNewsListViewModel.m */; };
 		041CE6D01FCFD83D00883695 /* QQNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6B81FCFD83D00883695 /* QQNewsViewModel.m */; };
-		041CE6D11FCFD83D00883695 /* qq_news_placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 041CE6BB1FCFD83D00883695 /* qq_news_placeholder@2x.png */; };
 		041CE6D21FCFD83D00883695 /* QQNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6BE1FCFD83D00883695 /* QQNewsViewController.m */; };
 		041CE6D31FCFD83D00883695 /* QQNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6C11FCFD83D00883695 /* QQNews.m */; };
 		041CE6D41FCFD83D00883695 /* QQNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6C41FCFD83D00883695 /* QQNewsCell.m */; };
@@ -19,6 +18,7 @@
 		041CE6D61FCFD83D00883695 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6C81FCFD83D00883695 /* AppDelegate.m */; };
 		041CE6D71FCFD83D00883695 /* QQNetworkManager+QQNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6CD1FCFD83D00883695 /* QQNetworkManager+QQNews.m */; };
 		041CE6D81FCFD83D00883695 /* QQNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 041CE6CE1FCFD83D00883695 /* QQNetworkManager.m */; };
+		04EAF50C1FD12CD5005817DD /* QQNews.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04EAF50B1FD12CD5005817DD /* QQNews.xcassets */; };
 		17253A3B40D0DC02CD47E50F /* libPods-MVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F392CD0F1E7593E4C314B7 /* libPods-MVVM.a */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,6 @@
 		041CE6B71FCFD83D00883695 /* QQNewsListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNewsListViewModel.m; sourceTree = "<group>"; };
 		041CE6B81FCFD83D00883695 /* QQNewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNewsViewModel.m; sourceTree = "<group>"; };
 		041CE6B91FCFD83D00883695 /* QQNewsListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNewsListViewModel.h; sourceTree = "<group>"; };
-		041CE6BB1FCFD83D00883695 /* qq_news_placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qq_news_placeholder@2x.png"; sourceTree = "<group>"; };
 		041CE6BD1FCFD83D00883695 /* QQNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNewsViewController.h; sourceTree = "<group>"; };
 		041CE6BE1FCFD83D00883695 /* QQNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNewsViewController.m; sourceTree = "<group>"; };
 		041CE6C01FCFD83D00883695 /* QQNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQNews.h; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		041CE6CC1FCFD83D00883695 /* QQNetworkManager+QQNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QQNetworkManager+QQNews.h"; sourceTree = "<group>"; };
 		041CE6CD1FCFD83D00883695 /* QQNetworkManager+QQNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "QQNetworkManager+QQNews.m"; sourceTree = "<group>"; };
 		041CE6CE1FCFD83D00883695 /* QQNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQNetworkManager.m; sourceTree = "<group>"; };
+		04EAF50B1FD12CD5005817DD /* QQNews.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QQNews.xcassets; sourceTree = "<group>"; };
 		10F392CD0F1E7593E4C314B7 /* libPods-MVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D06DEA00CEF2C3E23857F8E /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		9DB694976E34BCFC48C3F9A2 /* Pods-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM/Pods-MVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 				041CE6B51FCFD83D00883695 /* ViewModel */,
 				041CE6C21FCFD83D00883695 /* View */,
 				041CE6BF1FCFD83D00883695 /* Model */,
-				041CE6BA1FCFD83D00883695 /* NewsAssets */,
+				04EAF50B1FD12CD5005817DD /* QQNews.xcassets */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -130,14 +130,6 @@
 				041CE6B81FCFD83D00883695 /* QQNewsViewModel.m */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		041CE6BA1FCFD83D00883695 /* NewsAssets */ = {
-			isa = PBXGroup;
-			children = (
-				041CE6BB1FCFD83D00883695 /* qq_news_placeholder@2x.png */,
-			);
-			path = NewsAssets;
 			sourceTree = "<group>";
 		};
 		041CE6BC1FCFD83D00883695 /* Controller */ = {
@@ -276,8 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				041CE6161FCED23200883695 /* LaunchScreen.storyboard in Resources */,
+				04EAF50C1FD12CD5005817DD /* QQNews.xcassets in Resources */,
 				041CE6131FCED23200883695 /* Assets.xcassets in Resources */,
-				041CE6D11FCFD83D00883695 /* qq_news_placeholder@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
