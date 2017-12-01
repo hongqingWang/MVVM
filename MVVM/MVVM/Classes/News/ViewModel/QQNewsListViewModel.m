@@ -16,6 +16,7 @@
 
 - (void)loadNewsDataCompletion:(void (^)(BOOL))completion {
     
+    // 调用`QQNetworkManager+QQNews`中的获取新闻数据的方法
     [[QQNetworkManager sharedManager] loadNewsDataCompletion:^(NSArray *dataArray) {
         
         NSLog(@"%s %@", __FUNCTION__, dataArray);
@@ -30,6 +31,7 @@
         
         [self.newsList addObjectsFromArray:arrayM];
         
+        // 将结果回调给`QQNewsViewController`,使其进行刷新界面等操作
         completion(YES);
     }];
 }
